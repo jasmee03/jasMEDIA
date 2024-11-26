@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <title>Janaki Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                Jan<span>@KI</span>
+            </div>
+            <div class="links">
+                <div class="nav"><a href="#">Home</a></div>
+                <div class="nav"><a href="#">Services</a></div>
+                <div class="nav"><a href="#">Skills</a></div>
+                <div class="nav"><a href="#">Education</a></div>
+                <div class="nav"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Content</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="iam.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Hii i'm<p1> Janaki</p1>
+                </h1>
+                <h2>i'm a <span style="--i:4;" data-text="Frontend Devloper">Frontend Devloper</span>
+                    <span style="--i:3;" data-text="Designer">Designer</span>
+                    <span style="--i:2;" data-text="Youtuber">Youtuber</span>
+                    <span style="--i:1;" data-text="Freelancer">Freelancer</span>
+                </h2>
+                <p>Web developer and graphic designer<br>
+                    who loves creating websites and digital<br> experiences
+                    that are engaging and<br> fun to use.
+                    I pay close attention to details and
+                    am good at<br> solving problems,
+                    which helps me combine design <br>and development
+                    skills to create websites that are both beautiful and work well.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/janaki-kumari-rokaya-381417290/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="http://github.com/jasmee03"><i class="fa-brands fa-github"></i></a>
+                    <a
+                        href="https://www.facebook.com/people/Janaki-Kshetri/pfbid0ZCC9oKSw3YnjwittGxDBLXA7Mn5FjqaxxszbBCUwtgXSWr8KuXegxR8kAkxyHYgQl/"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="btn">
+                    <button>More About Me</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        const hamburg = document.querySelector('.hamburg')
+        const cancel = document.querySelector('.cancel')
+        const navbar = document.querySelector('.dropmenu');
+
+        hamburg.addEventListener('click', () => {
+            navbar.style.transform = "translateY(0px)"
+            hamburg.style.display = 'none'
+        })
+        cancel.addEventListener('click', () => {
+            navbar.style.transform = "translateY(-300px)"
+            hamburg.style.display = 'block'
+        })
+
+
+    </script>
+
+</body>
+
+</html>

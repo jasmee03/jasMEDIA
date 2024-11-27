@@ -1,11 +1,12 @@
-var typed = new typed(".typed.text", {
-    Strings:['Fronted Devloper' , 'Full Stack Devloper', 'web Designer'],
-    typeSpeed:100,
-    backSpeed:100,
-    backDelay:1000,
-    loop:true
-});
-
+const typed = () => {
+    typed(".typed.text", {
+        Strings:['Fronted Devloper' , 'Full Stack Devloper', 'web Designer'],
+        typeSpeed:100,
+        backSpeed:100,
+        backDelay:1000,
+        loop:true
+    });
+}
 //hamburger menu 
 const hamburg = document.querySelector('.hamburg')
         const cancel = document.querySelector('.cancel')

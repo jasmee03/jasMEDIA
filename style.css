@@ -8,8 +8,7 @@
 body {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    background-color: black;
+    background-color: rgb(10, 16, 30);
 }
 
 nav {
@@ -115,14 +114,15 @@ section {
 
 .main-container {
     width: 100%;
-    height: 100%;
+    height: 1%;
+    margin-top: 327px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .main-container .image {
-    width: 400px;
+    width: 523px;
     height: 60vh;
     border-radius: 100%;
     overflow: hidden;
@@ -137,7 +137,7 @@ section {
     animation: animate 1.5s ease-in-out infinite;
 }
 
-@keyframes animate {
+/* @keyframes animate {
     0% {
         scale: 1;
     }
@@ -149,7 +149,7 @@ section {
     50% {
         scale: 1;
     }
-}
+} */
 
 .main-container .content {
     color: white;
@@ -179,26 +179,6 @@ section {
     -webkit-text-stroke: .7px cadetblue;
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
-}
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-@keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX((0px));
-        opacity: 1;
-    }
 }
 
 .content h2 span::before {
@@ -313,13 +293,14 @@ section {
     .main-container button {
         margin-top: 15px;
     }
-}/*
+}
+
 .about{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--snd-bg-color);
+    margin-top: 437px;
 
 }
 .about-img img{
@@ -339,50 +320,47 @@ section {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-}*/
+}
+
 .about-content {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: white;
+    color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #333;
+.about h1 {
+    color: white;
 }
 
-h2 {
-    color: #555;
+.about h2 {
+    color: #3b92cc;
 }
 
-ul {
+.about ul {
     list-style-type: none;
     padding: 0;
 }
 
-li {
-    background: #e2e2e2;
+.about li {
+    background: #3b92cc;
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
 }
 
-button {
+.about button {
     margin-top: 20px;
     padding: 10px 15px;
-    background-color: #007BFF;
+    background-color: #3b92cc;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
+.about button:hover {
     background-color: cadetblue;
-}
-
-.hidden {
-    display: none;
 }

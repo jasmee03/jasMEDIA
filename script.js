@@ -11,7 +11,7 @@ document.getElementById('moreInfoBtn').addEventListener('click', function() {
         moreInfo.classList.remove('hidden');
         this.textContent = 'Less About Me';
     } else {
-        moreInfo.classList.add('hidden');
+        moreInfo.classList.add('hiddeen');
         this.textContent = 'More About Me';
     }
 });
